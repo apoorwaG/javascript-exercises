@@ -26,8 +26,10 @@ const power = function(number, power) {
   return number ** power;
 };
 
-const factorial = function() {
-	
+const factorial = function(number) {
+	if(number == 0) return 1;
+
+  return number * factorial(number-1);
 };
 
 // Do not edit below this line
